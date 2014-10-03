@@ -25,3 +25,8 @@ assurance work in a professional setting. This has mostly been
 in a black box setting, however on occassion I have had the 
 opportunity to get my hands dirty reviewing/editing existing
 code bases.
+
+##Academic Background
+*Spring 2006 Graduated from Rowan County Senior High School
+*Spring 2011 Graduated from Morehead State University with B.S. in Biological Science
+*Fall 2013 Started attending Oregon State University for B.S. in Computer Science
