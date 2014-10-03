@@ -20,3 +20,10 @@ assurance work in a professional setting. This has mostly been
 in a black box setting, however on occassion I have had the 
 opportunity to get my hands dirty reviewing/editing existing
 code bases.
+
+##Rewriting the future
+*To get here I had to rewrite the past. I had to undo deleting the
+programming-bio branch which was actually fairly simple. Using 
+stackoverflow I was able to use the git command reflog and then find
+where the branch programming-bio was and use git checkout -b programming-bio [sha]
+to recreate the branch I had deleted after the merge. Git is cool!
