@@ -30,3 +30,5 @@ code bases.
 *Spring 2006 Graduated from Rowan County Senior High School
 *Spring 2011 Graduated from Morehead State University with B.S. in Biological Science
 *Fall 2013 Started attending Oregon State University for B.S. in Computer Science
+
+Looked over by Eric Nelson (firebird6885)!
