@@ -1,0 +1,12 @@
+table.bikeTable{
+  border: outset 1pt;
+  border-spacing: 5pt;
+}
+
+tbody th {
+  font-weight: normal;
+}
+
+tbody tr{
+  font-weight: bolder;
+}
