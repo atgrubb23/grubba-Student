@@ -1,16 +1,30 @@
 table.bikeTable{
-  border: outset 1pt;
-  border-spacing: 5pt;
+  border: 1px solid;
+}
+
+thead th{
+  border: 1px solid;
 }
 
 tbody th {
   font-weight: normal;
+  border: 1px solid;
+}
+
+tbody tr td{
+  border: 1px solid;
 }
 
 tbody tr td:nth-child(2){
+  border: 1px solid black;
   color: red;
 }
 
 tbody tr td:nth-child(4){
+  border: 1px solid black;
   color: blue;
+}
+
+tfoot tr td{
+  border: 1px solid;
 }
