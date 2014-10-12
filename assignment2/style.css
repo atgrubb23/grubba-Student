@@ -33,8 +33,40 @@ dd:hover{
   background: purple;
 }
 
+div.outerBox{
+  border: 1px solid;
+  padding: 10px;
+  border-color: gray;
+}
+
+div.innerBox{
+  border: 1px solid;
+  padding: 10px;
+  border-color: gray;
+}
+
+div.entryBox{
+  border: 1px solid;
+  border-color: gray;
+  padding: 10px;
+}
+
+div.submitButton{
+  padding:10px;
+}
+
+[type="submit"]{
+  margin-left: 50%;
+  padding: 5px;
+}
+
+[type="radio"]{
+  margin-top: 10px;
+}
+
 #red{
   background: red;
+  position: relative;
   height: 100px;
   width: 15%;
   float: left;
@@ -44,6 +76,7 @@ dd:hover{
 
 #orange{
   background: orange;
+  position: relative;
   height: 100px;
   width: 50%;
   margin-top: 20px;
@@ -52,34 +85,38 @@ dd:hover{
 
 #yellow{
   background: yellow;
+  position: relative;
   height: 200px;
   width: 50px;
   float: left;
-  margin-top: 195px;
+  margin-top: 75px;
   margin-left: 100px;
 }
 
 #green{
   background: green;
+  position: relative;
   height: 200px;
   width: 150px;
-  margin-top: 195px;
+  margin-top: 75px;
   margin-left: 170px;
 }
 
 #blue{
   background: blue;
+  position: relative;
   height: 200px;
   width: 50px;
-  margin-top: 470px;
+  margin-top: 75px;
   float: right;
 }
 
 #indigo{
   background: indigo;
+  position: relative;
   height: 200px;
   width:150px;
-  margin-top: 470px;
+  margin-top: 75px;
   margin-right: 100px;
   margin-left: 20px;
   float: right;

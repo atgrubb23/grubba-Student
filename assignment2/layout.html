@@ -19,17 +19,47 @@
           <th>Fat Bike
       </thead>
       <tbody>
-        <tr>  <th><em>Giant</em></th> <td>Defy</td>  <td> XtC </td>  <td>TCX</td>  <td>Roam</td>  <td>N/A</td>
-        <tr>  <th><em>Trek</em></th>  <td>Madone</td>  <td>Superfly</td>  <td>Boone</td>  <td>DS Series</td>  <td>Farley</td>
-        <tr>  <th><em>Specialized</em></th> <td>Roubaix</td>  <td>Stumpjumper</td>  <td>Crux</td>  <td>Sirrus</td>  <td>Fatboy</td>
-        <tr>  <th><em>Surly</em></th> <td>Pacer</td>  <td>Karate Monkey</td>  <td>Crosscheck</td>  <td>Long Haul Trucker</td>  <td>Pugsley</td>
-        <tr>  <th><em>Cervelo</em></th> <td>R Series</td>  <td>N/A</td>  <td>N/A</td>  <td>N/A</td>  <td>N/A</td>
+        <tr>  
+          <th><em>Giant</em></th> 
+          <td>Defy</td>  
+          <td> XtC </td>  
+          <td>TCX</td>  
+          <td>Roam</td>  
+          <td>N/A</td>
+        <tr>  
+          <th><em>Trek</em></th>  
+          <td>Madone</td>  
+          <td>Superfly</td>  
+          <td>Boone</td>  
+          <td>DS Series</td>  
+          <td>Farley</td>
+        <tr>  
+          <th><em>Specialized</em></th>
+          <td>Roubaix</td>
+          <td>Stumpjumper</td>
+          <td>Crux</td>
+          <td>Sirrus</td>
+          <td>Fatboy</td>
+        <tr>  
+          <th><em>Surly</em></th>
+          <td>Pacer</td>
+          <td>Karate Monkey</td>
+          <td>Crosscheck</td>
+          <td>Long Haul Trucker</td>
+          <td>Pugsley</td>
+        <tr>
+          <th><em>Cervelo</em></th>
+          <td>R Series</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
       </tbody>
       <tfoot>
         <tr>  <td colspan=1>Footer 1</td> <td colspan = 4>Footer 2</td> 
       </tfoot>
     </table>
-    
+    <br>
     <dl>
       <dt>Commuter Tire</dt>
         <dd>Continental Gatorskin</dd>
@@ -38,59 +68,72 @@
       <dt>Road Tire</dt>
         <dd>Michelin Lithion 2</dd>
     </dl>
-    
-    <form action="layout.html" method="post">
-      <div>
-        <label>Text entry</label>
-        <input type="text" name="text_input"/>
-        <br>
-        <label>Number entry</label>
-        <input type="number" name="numerical_input"/>
-        <br>
-        <label>Password</label>
-        <input type="password" name="password_input"/>
-        <br>
-      </div>
-      <div>
-        <label>Candy Selection:</label>
-        <br>
-        <input type="radio" name="candy" value="snickers"/>Snickers
-        <br>
-        <input type="radio" name="candy" value="skittles"/>Skittles
-        <br>
-        <input type="radio" name="candy" value="Mentos"/>Mentos
-      </div>
-      <div>
-        <input type="submit"/>
-      </div>
-    </form>
-    
     <br>
-    
+    <form action="layout.html" method="post">
+      <fieldset>
+        <legend>Some Post Data</legend>
+        <div class="entryBox">
+          <label>Text:</label>
+          <input type="text" name="text_input"/>
+        </div>
+        <br>
+        <div class="entryBox">
+          <label>Number:</label>
+          <input type="number" name="numerical_input"/>
+        </div>
+        <br>
+        <div class="entryBox">
+          <label>Password:</label>
+          <input type="password" name="password_input"/>
+        </div>
+        <br>
+        <div class="innerBox">
+          <label>Candy Selection:</label>
+          <br>
+          <input type="radio" name="candy" value="snickers"/>Snickers
+          <br>
+          <input type="radio" name="candy" value="skittles"/>Skittles
+          <br>
+          <input type="radio" name="candy" value="Mentos"/>Mentos
+        </div>
+        <div class="submitButton">
+          <input type="submit"/>
+        </div>
+      </fieldset>
+    </form>
+    <br>
+    <br>
     <form action="layout.html" method="get">
-      <div>
-        <label>Text entry</label>
-        <input type="text" name="text_input"/>
+      <fieldset>
+        <legend>Some Get Data</legend>
+        <div class="entryBox">
+          <label>Text:</label>
+          <input type="text" name="text_input"/>
+        </div>
         <br>
-        <label>Number entry</label>
-        <input type="number" name="numerical_input"/>
+        <div class="entryBox">
+          <label>Number:</label>
+          <input type="number" name="numerical_input"/>
+        </div>
         <br>
-        <label>Password</label>
-        <input type="password" name="password_input"/>
+        <div class="entryBox">
+          <label>Password:</label>
+          <input type="password" name="password_input"/>
+        </div>
         <br>
-      </div>
-      <div>
-        <label>Candy Selection:</label>
-        <br>
-        <input type="radio" name="candy" value="snickers"/>Snickers
-        <br>
-        <input type="radio" name="candy" value="skittles"/>Skittles
-        <br>
-        <input type="radio" name="candy" value="Mentos"/>Mentos
-      </div>
-      <div>
-        <input type="submit"/>
-      </div>
+        <div class="innerBox">
+          <label>Candy Selection:</label>
+          <br>
+          <input type="radio" name="candy" value="snickers"/>Snickers
+          <br>
+          <input type="radio" name="candy" value="skittles"/>Skittles
+          <br>
+          <input type="radio" name="candy" value="Mentos"/>Mentos
+        </div>
+        <div class="submitButton">
+          <input type="submit"/>
+        </div>
+      </fieldset>
     </form>
     
     <div id="red">
