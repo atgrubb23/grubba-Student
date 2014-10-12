@@ -32,3 +32,55 @@ tfoot tr td{
 dd:hover{
   background: purple;
 }
+
+#red{
+  background: red;
+  height: 100px;
+  width: 15%;
+  float: left;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+
+#orange{
+  background: orange;
+  height: 100px;
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+
+#yellow{
+  background: yellow;
+  height: 200px;
+  width: 50px;
+  float: left;
+  margin-top: 195px;
+  margin-left: 100px;
+}
+
+#green{
+  background: green;
+  height: 200px;
+  width: 150px;
+  margin-top: 195px;
+  margin-left: 170px;
+}
+
+#blue{
+  background: blue;
+  height: 200px;
+  width: 50px;
+  margin-top: 470px;
+  float: right;
+}
+
+#indigo{
+  background: indigo;
+  height: 200px;
+  width:150px;
+  margin-top: 470px;
+  margin-right: 100px;
+  margin-left: 20px;
+  float: right;
+}
