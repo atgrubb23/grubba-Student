@@ -1,0 +1,10 @@
+img.linkImage{
+  height: 200px;
+  width: 200px;
+  padding: 10%;
+}
+
+fieldset{
+  border-color: black;
+  border: solid 4px;
+}
