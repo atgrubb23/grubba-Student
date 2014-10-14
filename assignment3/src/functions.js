@@ -13,7 +13,11 @@
 */
 
 //your code here
-
+function uselessFunction(){
+  var a = 'useless';
+  
+  return a;
+}
 //end your code
 
 var bar = 'not a function';
@@ -29,7 +33,7 @@ var barType = typeof bar;
 */
 
 //your code here
-
+bar = function ([a])
 //end your code
 
 /**

@@ -15,7 +15,14 @@ SimpleMath.prototype.getFactorial = function(number) {
   }
   //your code here
   else {
-    return undefined;
+    //start with value of 1 because !0 == 1
+    var result = 1;
+    
+    for(var i = 1; i <= number; i++){
+      result = result * i;
+    }
+    
+    return result;
   }
   //end your code
 };
@@ -28,7 +35,14 @@ SimpleMath.prototype.getFactorial = function(number) {
 */
 SimpleMath.prototype.signum = function(number) {
  //your code here
- return undefined;
+ if(number > 0)
+  return 1;
+ 
+ else if(number == 0)
+  return 0;
+  
+ else
+  return -1;
  //end your code
 };
 
@@ -40,7 +54,8 @@ SimpleMath.prototype.signum = function(number) {
 */
 SimpleMath.prototype.average = function(number1, number2) {
   //your code here
-  return undefined;
+  
+  return (number1 + number2) / 2;
   //end your code
 };
 
