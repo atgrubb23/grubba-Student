@@ -33,7 +33,23 @@ var barType = typeof bar;
 */
 
 //your code here
-bar = function ([a])
+bar = function (anArray) {
+  var success = false;
+  
+  for (var i = 0; i < anArray.length; i++) {
+    if (typeof anArray[i] === 'number') {
+      anArray[i] = anArray[i] * 2;
+      success = true;
+    }
+    
+    else {
+      success = false;
+      return success;
+    }
+  }
+  
+  return success;
+}
 //end your code
 
 /**
@@ -50,5 +66,33 @@ bar = function ([a])
 */
 
 //your code here
-
+function emailParse(emailArray) {
+  var parsedEmails = [3];
+  var anEmail = '';
+  var local = '';
+  var domain = '';
+  var topLevelDomain = '';
+  
+  //initialize array of arrays
+  parsedEmails[0] = [];
+  parsedEmails[1] = [];
+  parsedEmails[2] = [];
+  
+  for (var i = 0; i < emailArray.length; i++) {
+    //parse strings out of email addresses
+    if (typeof emailArray[i] === 'string') {
+      anEmail = emailArray[i];
+      local = anEmail.substring(0, anEmail.indexOf("@"));
+      domain = anEmail.substring(anEmail.indexOf("@") + 1, anEmail.indexOf("."));
+      topLevelDomain = anEmail.substring(anEmail.indexOf(".") + 1);
+    }
+    
+    //store parsed strings into array of arrays
+    parsedEmails[0][i] = local;
+    parsedEmails[1][i] = domain;
+    parsedEmails[2][i] = topLevelDomain;
+  }
+  
+  return parsedEmails;
+}
 //end your code
