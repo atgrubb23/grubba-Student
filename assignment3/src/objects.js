@@ -36,7 +36,40 @@ function returnObjectLiteral() {
 */
 
 //your code here
+function Furniture(name, cost) {
+  this.name = name;
+  this.cost = cost;
+}
 
+function Cat(name, color) {
+  this.name = name;
+  this.color = color;
+  this.destroyedFurn = [];
+  
+  this.destroyFurniture = function(name, cost) {
+    this.destroyedFurn.push({'name': name, 'cost':cost});
+  };
+  
+  this.lastDestroyedFurniture = function() {
+    return this.destroyedFurn[this.destroyedFurn.length - 1];
+  };
+  
+  this.totalDestroyed = function() {
+    var cost = 0;
+    
+    //loop through array of destroyed furniture and tally up costs
+    for (var i = 0; i < this.destroyedFurn.length; i++) {
+      cost += this.destroyedFurn[i].cost;
+    }
+    
+    //return tally of costs
+    return cost;
+  };
+  
+  this.nthDestroyed = function(num) {
+    return this.destroyedFurn[num];
+  };
+}
 //end your code
 
 /**
@@ -46,7 +79,9 @@ function returnObjectLiteral() {
 */
 
 //your code here
-
+var myCat = new Cat('Maru', 'Orange');
+myCat.destroyFurniture('couch', 500);
+myCat.destroyFurniture('recliner', 500);
 //end your code
 
 /**
@@ -58,5 +93,13 @@ function returnObjectLiteral() {
 * @return {string} - The cats reaction.
 */
 //your code here
-
+Cat.prototype.pet = function (n) {
+  if (n > 2.5) {
+    return 'CLAW!';
+  }
+  
+  else {
+    return 'Purr.';
+  }
+};
 //end your code
